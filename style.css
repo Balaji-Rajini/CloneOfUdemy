@@ -16,6 +16,10 @@ body {
     gap: 15px;
     /* flex-direction: row; */
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
 .navbar-s1__title {
@@ -36,6 +40,7 @@ body {
     width: 100%;
     border: none;
     font-size: 16px;
+    background-color: transparent;
 }
 
 .navbar-s2 input:focus {
@@ -48,6 +53,26 @@ body {
     gap: 15px;
 }
 
+.mylearning{
+position: relative;
+cursor: pointer;
+
+}
+.mylearning:hover .mylearning__popup{
+    display: block;
+}
+.mylearning__popup{
+
+position: absolute;
+background-color: white;
+border: solid black 1px ;
+width: 100px;
+top: 150%;
+right: 0;
+padding: 20px;
+display: none;
+
+}
 .categories {
     justify-content: space-around;
     padding: 10px;
@@ -63,9 +88,23 @@ body {
     border-radius: 30px;
 
 }
+.sale-image{
+    position: relative;
 
+}
 .sale-image img {
     width: 100%;
+}
+
+.sale-image-offer {
+    background-color: white;
+    padding: 30px;
+    border: black solid 2px;
+    width: 35%;
+    position: absolute;
+        top: 10%;
+        left: 10%;
+
 }
 
 .course-card {
@@ -109,29 +148,35 @@ body {
     justify-content: center;
 
 }
-.popular{
+
+.popular {
     padding: 10px;
 }
-.popular__container{
+
+.popular__container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.footer{
+
+.footer {
     color: white;
     background-color: black;
     padding: 30px;
 }
-.footer__one{
+
+.footer__one {
     display: flex;
     justify-content: flex-start;
-gap: 20px;
+    gap: 20px;
 
 }
-.footer__one p{
+
+.footer__one p {
     margin: 20px;
 }
-.footer__two{
+
+.footer__two {
     display: flex;
     justify-content: space-between;
     margin: 20px;
